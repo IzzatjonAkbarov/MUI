@@ -38,11 +38,13 @@ function App() {
       <CssBaseline />
 
       <div>
-        <Header
-          isDarkMode={isDarkMode}
-          setIsDarkMode={setIsDarkMode}
-          darkmode={darkmode}
-        />
+        <div className=" sticky top-0 z-100 bg-[#000000932] backdrop-blur-3xl shadow">
+          <Header
+            isDarkMode={isDarkMode}
+            setIsDarkMode={setIsDarkMode}
+            darkmode={darkmode}
+          />
+        </div>
         <Outlet />
       </div>
     </ThemeProvider>
