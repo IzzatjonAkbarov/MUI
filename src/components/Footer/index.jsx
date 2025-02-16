@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../assets/icons/LogoMain.svg";
 const Footer = () => {
   return (
-    <div className="container1 flex items-start justify-between py-20 max-[800px]:flex-col">
+    <div className="container1 flex items-start justify-between pb-20 max-[800px]:flex-col">
       <div className="w-fit max-[800px]:w-full">
         <img src={Logo} className="py-4" alt="" />
         <h1 className="font-bold text-[14px]">Keep up to date</h1>
