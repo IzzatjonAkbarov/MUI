@@ -11,14 +11,11 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-function createData(name, calories) {
-  return { name, calories };
+function createData(name) {
+  return { name };
 }
 
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-];
+const rows = [createData("Frozen yoghurt"), createData("Ice cream sandwich")];
 
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -166,7 +163,6 @@ const Design = () => {
                   <TableHead>
                     <TableRow>
                       <TableCell>Dessert (100g serving)</TableCell>
-                      <TableCell align="right">Calories</TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -185,7 +181,7 @@ const Design = () => {
                 </Table>
               </TableContainer>
             </div>
-            <button>Button</button>
+            <button>table</button>
           </div>
           <div className="p-3 border border-gray-400 ">
             <div className="flex items-center gap-3 ">
